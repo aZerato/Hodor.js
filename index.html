@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="hodor.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('button[data-action=hodor]').click(function() {
+				$(this).remove();
+				hodor();
+			});
+		});
+	</script>
+</head>
+<body>
+	<button data-action="hodor">Hodor</button>
+	<div>
+		<span>text</span>
+		<ul>
+			<li>text text</li>
+			<li>text</li>
+			<li>text</li>
+		</ul>
+		<div>
+			text text
+			<p>
+				text
+			</p>
+		</div>
+	</div>
+</body>
+</html>
